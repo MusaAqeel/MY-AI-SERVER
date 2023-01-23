@@ -35,7 +35,7 @@ async function request(req) {
   // console.log(req)
   const completion = await openai.createCompletion({
     model: "text-davinci-002",
-    prompt: message,
+    prompt: req.message,
     temperature: 0.5,
     max_tokens: 60,
     top_p: 1.0,
