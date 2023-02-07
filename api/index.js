@@ -37,7 +37,7 @@ async function request(req) {
     model: "text-davinci-003",
     prompt: req.message,
     temperature: 0.5,
-    max_tokens: 60,
+    max_tokens: 100,
     top_p: 1.0,
     frequency_penalty: 0.5,
     presence_penalty: 0,
